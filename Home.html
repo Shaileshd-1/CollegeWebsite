@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="styless.css">
+   <!-- // <script src="/fullscreen.js"></script> -->
+   <script src="Script.js" defer></script>
+   <script src="gallaryscript.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+     <!-- slide event -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+     <!-- Lightbox JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</head>
+<body>
+    <!-- College Header -->
+     <h2 >श्री शिवाय नमस्तुभ्यम्</h2>
+    <header class="college-header">
+        <img src="/7477907.jpg" alt="College Logo" id="college-logo">
+        <h1 class="college-name">College Name</h1>
+    </header>
+    
+    <!-- Navigation Bar -->
+    <!-- <nav class="navbar">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav> -->
+    <nav class="navbar">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">About Us <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="Chief.html">Chief</a></li>
+                    <li><a href="#">Mission & Vision</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Academic <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Departments</a></li>
+                    <li><a href="TeachingStaff.html">Teaching Staff</a></li>
+                    <li><a href="#">Non-Teaching Staff</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="Facilities.html">Facilities<i class="fas fa-caret-down"></i></a>
+                
+            </li>
+            <li class="dropdown">
+                <a href="/Hospital.html">Hospital<i class="fas fa-caret-down"></i></a>
+            </li>
+            <li class="dropdown">
+                <a href="#">Programs <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/Child Health  Nursing.docx">Undergraduate</a></li>
+                    <li><a href="#">Postgraduate</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Admissions <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Apply Now</a></li>
+                    <li><a href="#">Scholarships</a></li>
+                </ul>
+            </li>
+            <li><a href="#footer"id="contact-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="news-container">
+        <div class="news-header">Latest News:</div>
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+           <a href="./1.Assignment-Basics.pdf"target="_blank">Admission Open 2025</a> | Event 2: Details about the second event... | Event 3: Details about the third event...
+        </marquee>
+    </div>
+     
+    <!-- Image Slideshow -->
+    <div class="slideshow">
+        <div class="slide fade"><img src="/medical-procedures-3579029_1280.jpg" alt="Slide 1"></div>
+        <div class="slide fade"><img src="/dna-3539309_1280.jpg" alt="Slide 2"></div>
+        <div class="slide fade"><img src="/medical-procedures-3579029_1280.jpg" alt="Slide 3"></div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <!-- main -->
+    <section class="about-college">
+        <h2>About Our College</h2>
+        <p>
+            Our college is dedicated to providing quality education, fostering innovation, and shaping future leaders. 
+            With a commitment to academic excellence and holistic development, we offer state-of-the-art facilities, 
+            experienced faculty, and a vibrant campus life.Our college is dedicated to providing quality education, fostering innovation, and shaping future leaders. 
+            With a commitment to academic excellence and holistic development, we offer state-of-the-art facilities, 
+            experienced faculty, and a vibrant campus life.Our college is dedicated to providing quality education, fostering innovation, and shaping future leaders. 
+            With a commitment to academic excellence and holistic development, we offer state-of-the-art facilities, 
+            experienced faculty, and a vibrant campus life.Our college is dedicated to providing quality education, fostering innovation, and shaping future leaders. 
+            With a commitment to academic excellence and holistic development, we offer state-of-the-art facilities, 
+            experienced faculty, and a vibrant campus life.Our college is dedicated to providing quality education, fostering innovation, and shaping future leaders. 
+            With a commitment to academic excellence and holistic development, we offer state-of-the-art facilities, 
+            experienced faculty, and a vibrant campus life.
+        </p>
+    </section>
+    <main>
+        <!-- Chief & Principal Section -->
+        <section class="leaders">
+            <h2>Our Leadership</h2>
+            <div class="leader-container">
+                <div class="leader">
+                    <img src="/gallery.png" alt="Chief Name">
+                    <h3>Dr. John Doe</h3>
+                    <p>Chief Director</p>
+                </div>
+                <div class="leader">
+                    <img src="/gallery.png" alt="Principal Name">
+                    <h3>Prof. Jane Smith</h3>
+                    <p>Principal</p>
+                    <p id="para">Html stands for hypertext markup language.Hypertext means the text
+                        that can be tranferred from internet server to internet client.Markup language means
+                        which syntax will be in the form of text that can be transferred from internet server to internet client
+                    </p>
+                </div>
+                <div class="leader">
+                    <img src="/gallery.png" alt="Principal Name">
+                    <h3>Prof.Smith</h3>
+                    <p>Co</p>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="leaders"> if traingle shape structure want use this
+            <h2>Our Leadership</h2>
+            <div class="leader-container">
+                <div class="leader chief">
+                    <img src="/gallery.png" alt="Chief Name">
+                    <h3>Dr. John Doe</h3>
+                    <p>Chief Director</p>
+                </div>
+                <div class="bottom-row">
+                    <div class="leader">
+                        <img src="/gallery.png" alt="Principal Name">
+                        <h3>Prof. Jane Smith</h3>
+                        <p>Principal</p>
+                    </div>
+                    <div class="leader">
+                        <img src="/gallery.png" alt="Co Name">
+                        <h3>Prof. Smith</h3>
+                        <p>Co</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        
+        <!-- College Events Section -->
+        <!-- Image Gallery Section - Add this to the bottom of your pages before the footer -->
+
+        
+        
+            <section class="gallery-section">
+                <h2 id="gd">College Gallery</h2>
+                <div class="gallery-wrapper">
+                    <div class="arrow left-arrow" onclick="scrollGallery(-1)">&#10094;</div>
+                    <div class="gallery-container">
+                        <div class="gallery-item"><img src="/gallery.png" alt="College Event 1" onclick="openFullscreen(0)"></div>
+                        <div class="gallery-item"><img src="/gallery.png" alt="College Event 2" onclick="openFullscreen(1)"></div>
+                        <div class="gallery-item"><img src="/dna-3539309_1280.jpg" alt="College Event 3" onclick="openFullscreen(2)"></div>
+                        <div class="gallery-item"><img src="/gallery.png" alt="College Event 4" onclick="openFullscreen(3)"></div>
+                        <div class="gallery-item"><img src="/medical-procedures-3579029_1280.jpg" alt="College Event 5" onclick="openFullscreen(4)"></div>
+                        <div class="gallery-item"><img src="/gallery.png" alt="College Event 6" onclick="openFullscreen(5)"></div>
+                        <div class="gallery-item"><img src="/music.png" alt="College Event 7" onclick="openFullscreen(6)"></div>
+                        <div class="gallery-item"><img src="/gallery.png" alt="College Event 8" onclick="openFullscreen(7)"></div>
+                    </div>
+                    <div class="arrow right-arrow" onclick="scrollGallery(1)">&#10095;</div>
+                </div>
+            </section>
+        
+            <!-- Fullscreen Gallery Overlay -->
+            <div id="fullscreenOverlay" class="fullscreen-overlay">
+                <div class="close-btn" onclick="closeFullscreen()">×</div>
+                <div class="nav-arrows">
+                    <div class="arrow prev-arrow" onclick="navigateImage(-1)">&#10094;</div>
+                    <img id="fullscreenImage" src="" alt="Fullscreen Image">
+                    <div class="arrow next-arrow" onclick="navigateImage(1)">&#10095;</div>
+                </div>
+                <div class="image-counter" id="imageCounter"></div>
+            </div>
+        
+            
+        
+    
+        
+
+
+
+        
+
+        <!-- Admission Process Section -->
+        <section class="admission">
+            <h2>Admission Process</h2>
+            <ol>
+                <li><strong>Step 1:</strong> Fill the Online Application Form.</li>
+                <li><strong>Step 2:</strong> Submit Required Documents (Marksheet, ID, etc.).</li>
+                <li><strong>Step 3:</strong> Appear for Entrance Exam (if applicable).</li>
+                <li><strong>Step 4:</strong> Attend Counseling Session.</li>
+                <li><strong>Step 5:</strong> Pay Fees and Confirm Admission.</li>
+            </ol>
+        </section>
+    </main>   
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Contact Us</h3>
+                <p class="ctext">123 College Street, City, Country</p>
+                <p class="ctext">Email: info@college.com</p>
+                <p class="ctext">Phone: +123 456 7890</p>
+            </div>  
+
+            <div class="footer-center">
+                <h3>Follow Us ssss</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+                    <a href="https://instagram.com" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+                    <a href="https://linkedin.com" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <h3 >Find Us</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed/v1/place?q=College+Name+City&key=YOUR_API_KEY" 
+                    width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+                <img src="/logo.png" alt=""id="mp">
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 College Name. All rights reserved.</p>
+    </footer>
+
+    
+    <!-- <script src="script.j"></script>
+    <script src="fullscreen.js"></script> -->
+   
+</body>
+</html>

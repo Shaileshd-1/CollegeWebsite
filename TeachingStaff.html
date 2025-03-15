@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="styless.css">
+    <script src="/fullscreen.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- College Header -->
+     <h2 >श्री शिवाय नमस्तुभ्यम्</h2>
+    <header class="college-header">
+        <img src="/icons8-health-48.png" alt="College Logo" id="college-logo">
+        <h1 class="college-name">College Name</h1>
+    </header>
+    
+    <!-- Navigation Bar -->
+    <!-- <nav class="navbar">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav> -->
+    <nav class="navbar">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">About Us <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="Chief.html ">Chief</a></li>
+                    <li><a href="#">Mission & Vision</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Programs <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Undergraduate</a></li>
+                    <li><a href="#">Postgraduate</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Admissions <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Apply Now</a></li>
+                    <li><a href="#">Scholarships</a></li>
+                </ul>
+            </li>
+            <li><a href="#footer"id="contact-link">Contact</a></li>
+        </ul>
+    </nav>
+
+   <div class="teachingstaff">
+    <h2>Details of college teaching staff</h2>
+    <h3>Teaching Staff 2024</h3>
+    <a href="/1.Assignment-Basics.pdf" target="_blank">Click Here</a>
+
+    <!-- <iframe src="https://docs.google.com/gview?url=https://yourwebsite.com/files/Child_Health_Nursing.pdf&embedded=true"></iframe> -->
+
+
+    
+   </div>
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Contact Us</h3>
+                <p>123 College Street, City, Country</p>
+                <p>Email: info@college.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+
+            <div class="footer-center">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+                    <a href="https://instagram.com" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+                    <a href="https://linkedin.com" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+
+            <div class="footer-right">
+                <h3>Find Us</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed/v1/place?q=College+Name+City&key=YOUR_API_KEY" 
+                    width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2025 College Name. All rights reserved.</p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+   
+</body>
+</html>
