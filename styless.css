@@ -700,3 +700,47 @@ marquee a {
         padding: 6px;
     }
 }
+
+@media (max-width: 768px) {
+    .college-header {
+        flex-direction: row; /* Ensures the logo and name stay in one line */
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: nowrap;
+    }
+    
+    #college-logo {
+        width: 80px; /* Adjust size for mobile */
+        height: 120px;
+        margin: 0 10px; /* Add some spacing */
+    }
+
+    .college-name {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .news-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+    }
+
+    .news-header {
+        font-size: 16px;
+        margin-right: 5px;
+    }
+
+    marquee {
+        min-width: auto;
+        max-width: 70%;
+        font-size: 14px;
+    }
+}
