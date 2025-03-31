@@ -785,7 +785,7 @@ marquee a {
 .logo-section img {
     width: 100px; /* Adjust logo size */
     height: 150px;
-    /* max-width: 100%; */
+    max-width: 100%;
     margin-left: 20px
 }
 
