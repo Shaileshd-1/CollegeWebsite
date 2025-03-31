@@ -773,67 +773,42 @@ marquee a {
 
 .container {
     display: flex;
-    align-items: center; /* Align logo and text in one line */
-    justify-content: center; /* Center content */
+    align-items: center;
+    justify-content: center;
     background-color: #eef0f5;
     padding: 20px;
     gap: 20px;
-    /* flex-wrap: nowrap; Ensures content stays in one row */
-  flex-wrap:nowrap;
+    flex-wrap: nowrap;
 }
 
-.logo-section img {
-    width: 100px; /* Adjust logo size */
-    height: 150px;
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 100px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    object-fit: contain; /* Ensures proper scaling */
     max-width: 100%;
-    margin-left: 20px
-}
-
-.info-section {
-    flex: 1;
-    text-align: left;
-    margin-right:80px;
-}
-
-#namefont {
-    font-size: xx-large;
-    font-weight: bold;
-    white-space: nowrap; /* Prevents text from wrapping */
-    text-align: center;
-    /* margin-left: 10px; */
-    
-    
-}
-.namefont1 {
-    color: #bf0404;
-    text-align: center;
-    font-size: x-small;
-
-}
-.namefont2{
-    color: darkgreen;
+    display: block; /* Avoids inline whitespace issues */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
-        flex-direction: row; /* Ensures one line on mobile */
+        flex-direction: row;
         align-items: center;
         text-align: center;
         gap: 10px;
     }
 
-    .logo-section img {
-        width:70px; /* Reduce logo size for smaller screens */
-    }
-
-    .info-section {
-        text-align: center;
-    }
-
-    #namefont {
-        font-size: xx-small /* Adjust font size for mobile */
+    .logo-img {
+        width: 70px; /* Fixed width on mobile */
+        height: auto;
     }
 }
+
+
 
 
