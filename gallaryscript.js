@@ -63,3 +63,25 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".left-arrow").addEventListener("click", () => scrollGallery(-1));
     document.querySelector(".right-arrow").addEventListener("click", () => scrollGallery(1));
 });
+// NAV bar
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+let lastScrollTop = 0;
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+// Hide navbar on scroll down, show on scroll up
+window.addEventListener("scroll", function () {
+    let navbar = document.querySelector(".navbar");
+    let currentScroll = window.scrollY;
+
+    if (currentScroll > lastScrollTop) {
+        navbar.style.top = "-60px"; // Hide navbar
+    } else {
+        navbar.style.top = "0"; // Show navbar
+    }
+    lastScrollTop = currentScroll;
+});

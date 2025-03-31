@@ -9,12 +9,37 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- College Header -->
-     <h2 >श्री शिवाय नमस्तुभ्यम्</h2>
-    <header class="college-header">
-        <img src="/icons8-health-48.png" alt="College Logo" id="college-logo">
-        <h1 class="college-name">College Name</h1>
-    </header>
+    <div class="container">
+        <div class="logo-section">
+            <a href="/Home.html">
+            <img src="/7477907.jpg" alt="College Logo"></a>
+        </div>
+        <div class="info-section">
+            <h2 class="namefont1"id="namefont">Saraswati Bahuuddeshiy Sevabhavi Sanstha Gojegaon</h2>
+            <h1 id="namefont"class="namefont2">MAULI AYURVEDIC COLLEGE & HOSPITAl,MARKHEL</h1>
+            <h2 class="namefont2"id="namefont">TQ.DEGLOOR,DIST-NANDED</h2>
+            <!-- <p>Approved By CCIM/NCISM And Ayush New Delhi & Govt. Of Maharashtra</p>
+            <p>Affiliated To MUHS Nashik.</p>
+            <p>Institution Code: NCISM - AYU 0182 | College Code: MUHS - 122110</p>
+            <p>Admission Process: DMER College Code: 3115</p> -->
+        </div>
+        <!-- <div class="contact-section">
+            <div class="contact-item">
+                <span class="icon">📞</span>
+                <div>
+                    <h3>CALL US</h3>
+                    <p>02327 224401, 02327 224988</p>
+                </div>
+            </div> -->
+            <!-- <div class="contact-item">
+                <span class="icon">✉️</span>
+                <div>
+                    <h3>EMAIL</h3>
+                    <p>bamsgad@gmail.com</p>
+                </div>
+            </div> -->
+        </div>
+    </div>
     
     <!-- Navigation Bar -->
     <!-- <nav class="navbar">
@@ -34,15 +59,25 @@
             <li class="dropdown">
                 <a href="#">About Us <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown-menu">
-                    <li><a href="Chief.html ">Chief</a></li>
-                    <li><a href="#">Mission & Vision</a></li>
+                    <li><a href="Chief.html">Chief</a></li>
+                    <li><a href="/Principal.html">Principal</a></li>
+                    <li><a href="/Dean.html">Dean</a></li>
+                    <li><a href="/Dean.html">Management</a></li>
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="#">Programs <i class="fas fa-caret-down"></i></a>
+                <a href="#">Faculty <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Undergraduate</a></li>
-                    <li><a href="#">Postgraduate</a></li>
+                    <li><a href="TeachingStaff.html">Teaching Staff</a></li>
+                    <li><a href="">Hospital Staff</a></li>
+                    <li><a href="#">Non-Teaching Staff</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Courses<i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">UG Courses</a></li>
+                    <li><a href="#">PG Courses</a></li>
                 </ul>
             </li>
             <li class="dropdown">
@@ -52,18 +87,69 @@
                     <li><a href="#">Scholarships</a></li>
                 </ul>
             </li>
+            <li class="dropdown">
+                <a href="Facilities.html">Facilities<i class="fas fa-caret-down"></i></a>
+                
+            </li>
+            <li class="dropdown">
+                <a href="/Hospital.html">Hospital <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">About Hospital</a></li>
+                    <li><a href="#">Hospital Staff</a></li>
+                    <li><a href="#">Deparments</a></li>
+                    <li><a href="#">OPD & IPD Analysis</a></li>
+    
+                </ul>
+            </li>
             <li><a href="#footer"id="contact-link">Contact</a></li>
         </ul>
     </nav>
 
+    <div class="news-container">
+        <div class="news-header">Latest News:</div>
+        <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+           <a href="./1.Assignment-Basics.pdf"target="_blank">Admission Open 2025</a> | Event 2: Details about the second event... | Event 3: Details about the third event...
+        </marquee>
+    </div>
    <div class="teachingstaff">
     <h2>Details of college teaching staff</h2>
     <h3>Teaching Staff 2024</h3>
-    <a href="/1.Assignment-Basics.pdf" target="_blank">Click Here</a>
+    <a href="/1.Assignment-Basics.pdf" target="_blank">Click Here to download " 2024-2025 Teaching Staff " Details</a>
 
     <!-- <iframe src="https://docs.google.com/gview?url=https://yourwebsite.com/files/Child_Health_Nursing.pdf&embedded=true"></iframe> -->
 
-
+    <table style="width:70%"  border="1px solid"class="table">
+        <tr>
+          <th>Sr.No</Sr></th>
+          <th>Name of Person</th>
+          <th>Designation</th>
+        </tr>
+        <tr>
+          <td>01</td>
+          <td>John Doe</td>
+          <td>Principal</td>
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>John Doe</td>
+            <td>Principal</td>
+        </tr>
+        <tr>
+            <td>03</td>
+            <td>John Doe</td>
+            <td>Principal</td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td>John Doe</td>
+            <td>Principal</td>
+        </tr>
+        <tr>
+            <td>05</td>
+            <td>John Doe</td>
+            <td>Principal</td>
+        </tr>
+      </table>
     
    </div>
     <footer id="footer">
@@ -86,11 +172,12 @@
             </div>
 
             <div class="footer-right">
-                <h3>Find Us</h3>
+                <h3 >Find Us</h3>
                 <iframe 
                     src="https://www.google.com/maps/embed/v1/place?q=College+Name+City&key=YOUR_API_KEY" 
                     width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy">
                 </iframe>
+                <img src="/logo.png" alt=""id="mp">
             </div>
         </div>
         <p class="footer-bottom">&copy; 2025 College Name. All rights reserved.</p>

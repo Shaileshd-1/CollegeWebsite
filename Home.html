@@ -16,11 +16,38 @@
 </head>
 <body>
     <!-- College Header -->
-     <h2 >श्री शिवाय नमस्तुभ्यम्</h2>
-    <header class="college-header">
-        <img src="/7477907.jpg" alt="College Logo" id="college-logo">
-        <h1 class="college-name">College Name</h1>
-    </header>
+     <!-- <h2 >श्री शिवाय नमस्तुभ्यम्</h2> -->
+     <div class="container">
+        <div class="logo-section">
+            <a href="/Home.html">
+            <img src="/7477907.jpg" alt="College Logo"></a>
+        </div>
+        <div class="info-section">
+            <h2 class="namefont1"id="namefont">Saraswati Bahuuddeshiy Sevabhavi Sanstha Gojegaon</h2>
+            <h1 id="namefont"class="namefont2">MAULI AYURVEDIC COLLEGE & HOSPITAl,MARKHEL</h1>
+            <h2 class="namefont2"id="namefont">TQ.DEGLOOR,DIST-NANDED</h2>
+            <!-- <p>Approved By CCIM/NCISM And Ayush New Delhi & Govt. Of Maharashtra</p>
+            <p>Affiliated To MUHS Nashik.</p>
+            <p>Institution Code: NCISM - AYU 0182 | College Code: MUHS - 122110</p>
+            <p>Admission Process: DMER College Code: 3115</p> -->
+        </div>
+        <!-- <div class="contact-section">
+            <div class="contact-item">
+                <span class="icon">📞</span>
+                <div>
+                    <h3>CALL US</h3>
+                    <p>02327 224401, 02327 224988</p>
+                </div>
+            </div> -->
+            <!-- <div class="contact-item">
+                <span class="icon">✉️</span>
+                <div>
+                    <h3>EMAIL</h3>
+                    <p>bamsgad@gmail.com</p>
+                </div>
+            </div> -->
+        </div>
+    </div>
     
     <!-- Navigation Bar -->
     <!-- <nav class="navbar">
@@ -41,31 +68,24 @@
                 <a href="#">About Us <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown-menu">
                     <li><a href="Chief.html">Chief</a></li>
-                    <li><a href="#">Mission & Vision</a></li>
+                    <li><a href="/Principal.html">Principal</a></li>
+                    <li><a href="/Dean.html">Dean</a></li>
+                    <li><a href="/Dean.html">Management</a></li>
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="#">Academic <i class="fas fa-caret-down"></i></a>
+                <a href="#">Faculty <i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Admissions</a></li>
-                    <li><a href="#">Departments</a></li>
                     <li><a href="TeachingStaff.html">Teaching Staff</a></li>
+                    <li><a href="">Hospital Staff</a></li>
                     <li><a href="#">Non-Teaching Staff</a></li>
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="Facilities.html">Facilities<i class="fas fa-caret-down"></i></a>
-                
-            </li>
-            <li class="dropdown">
-                <a href="/Hospital.html">Hospital<i class="fas fa-caret-down"></i></a>
-            </li>
-            <li class="dropdown">
-                <a href="#">Programs <i class="fas fa-caret-down"></i></a>
+                <a href="#">Courses<i class="fas fa-caret-down"></i></a>
                 <ul class="dropdown-menu">
-                    <li><a href="/Child Health  Nursing.docx">Undergraduate</a></li>
-                    <li><a href="#">Postgraduate</a></li>
+                    <li><a href="#">UG Courses</a></li>
+                    <li><a href="#">PG Courses</a></li>
                 </ul>
             </li>
             <li class="dropdown">
@@ -75,13 +95,27 @@
                     <li><a href="#">Scholarships</a></li>
                 </ul>
             </li>
+            <li class="dropdown">
+                <a href="Facilities.html">Facilities<i class="fas fa-caret-down"></i></a>
+                
+            </li>
+            <li class="dropdown">
+                <a href="/Hospital.html">Hospital <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">About Hospital</a></li>
+                    <li><a href="#">Hospital Staff</a></li>
+                    <li><a href="#">Deparments</a></li>
+                    <li><a href="#">OPD & IPD Analysis</a></li>
+    
+                </ul>
+            </li>
             <li><a href="#footer"id="contact-link">Contact</a></li>
         </ul>
     </nav>
 
     <div class="news-container">
         <div class="news-header">Latest News:</div>
-        <marquee behavior="scroll" direction="left" scrollamount="5">
+        <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
            <a href="./1.Assignment-Basics.pdf"target="_blank">Admission Open 2025</a> | Event 2: Details about the second event... | Event 3: Details about the third event...
         </marquee>
     </div>
@@ -89,8 +123,8 @@
     <!-- Image Slideshow -->
     <div class="slideshow">
         <div class="slide fade"><img src="/medical-procedures-3579029_1280.jpg" alt="Slide 1"></div>
-        <div class="slide fade"><img src="/dna-3539309_1280.jpg" alt="Slide 2"></div>
-        <div class="slide fade"><img src="/medical-procedures-3579029_1280.jpg" alt="Slide 3"></div>
+        <div class="slide fade"><img src="/ai-generated-8643329_1280.png" alt="Slide 2"></div>
+        <div class="slide fade"><img src="/medical-8562583_1280.jpg" alt="Slide 3"></div>
         <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
         <button class="next" onclick="changeSlide(1)">&#10095;</button>
     </div>
@@ -121,6 +155,7 @@
                     <img src="/gallery.png" alt="Chief Name">
                     <h3>Dr. John Doe</h3>
                     <p>Chief Director</p>
+                    <button class="btn" onclick="window.location.href='Chief.html'">Know More</button>
                 </div>
                 <div class="leader">
                     <img src="/gallery.png" alt="Principal Name">
@@ -130,11 +165,14 @@
                         that can be tranferred from internet server to internet client.Markup language means
                         which syntax will be in the form of text that can be transferred from internet server to internet client
                     </p>
+                    <button class="btn" onclick="window.location.href='Principal.html'">Know More</button>
+                    
                 </div>
                 <div class="leader">
                     <img src="/gallery.png" alt="Principal Name">
                     <h3>Prof.Smith</h3>
                     <p>Co</p>
+                    <button class="btn" onclick="window.location.href='Co.html'">Know More</button>
                 </div>
             </div>
         </section>
@@ -221,13 +259,13 @@
         <div class="footer-container">
             <div class="footer-left">
                 <h3>Contact Us</h3>
-                <p class="ctext">123 College Street, City, Country</p>
-                <p class="ctext">Email: info@college.com</p>
-                <p class="ctext">Phone: +123 456 7890</p>
-            </div>  
+                <p>123 College Street, City, Country</p>
+                <p>Email: info@college.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
 
             <div class="footer-center">
-                <h3>Follow Us ssss</h3>
+                <h3>Follow Us</h3>
                 <div class="social-icons">
                     <a href="https://facebook.com" target="_blank"><img src="facebook.png" alt="Facebook"></a>
                     <a href="https://twitter.com" target="_blank"><img src="twitter.png" alt="Twitter"></a>
@@ -247,7 +285,6 @@
         </div>
         <p class="footer-bottom">&copy; 2025 College Name. All rights reserved.</p>
     </footer>
-
     
     <!-- <script src="script.j"></script>
     <script src="fullscreen.js"></script> -->
