@@ -797,27 +797,26 @@ marquee a {
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Stack vertically on small screens */
+        flex-direction: column;
         align-items: center;
-        gap: 10px;
         text-align: center;
+        padding: 10px;
     }
 
     .logo-section {
         flex-direction: column;
-         align-items: flex-start;
-        text-align: center; 
+        align-items: center;
     }
 
     .logo-img {
-        width: 60px; /* Adjust based on design */
+        width: 70px;
+        margin: 0 0 10px 0;
     }
 
-    .logo-text,
-    .info-section {
-        font-size: 16px; /* Keep text readable */
-        line-height: 1.2;
-        padding: 0 10px;
+    .logo-text h1,
+    .logo-text h2,
+    .logo-text h3 {
+        font-size: 16px;
     }
 }
 
