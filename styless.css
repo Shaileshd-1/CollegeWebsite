@@ -83,6 +83,9 @@ body {
 .dropdown-menu a:hover {
     background: #f8f8f7;
 }
+.dropdown-menu.active {
+    display: block;
+}
 @media (min-width: 993px){
 .dropdown:hover .dropdown-menu 
 {    display: block;

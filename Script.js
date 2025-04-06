@@ -86,19 +86,24 @@ function changeSlide(n) {
 }
 
 // Toggle Mobile Menu
+// Toggle mobile menu
 function toggleMenu() {
     document.querySelector(".nav-links").classList.toggle("active");
 }
 
-// Enable Dropdowns on Click for Mobile
-document.querySelectorAll(".dropdown > a").forEach((dropdown) => {
-    dropdown.addEventListener("click", function (e) {
-        if (window.innerWidth <= 768) {
-            e.preventDefault();
-            this.parentElement.querySelector(".dropdown-menu").classList.toggle("active");
+// Enable dropdown toggle on mobile devices
+document.querySelectorAll(".dropdown > a").forEach((dropdownLink) => {
+    dropdownLink.addEventListener("click", function (e) {
+        if (window.innerWidth <= 992) {
+            e.preventDefault(); // Prevent default link behavior
+            const submenu = this.parentElement.querySelector(".dropdown-menu");
+            if (submenu) {
+                submenu.classList.toggle("active");
+            }
         }
     });
 });
+
 
 // Reload page when clicking logo or home link
 document.getElementById("college-logo").addEventListener("click", function(event) {
