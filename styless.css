@@ -818,7 +818,7 @@ marquee a {
     }
   
     .logo-text {
-      font-size: 8px;
+      font-size: 6px;
       font-weight: 600;
       white-space: nowrap;     /* Prevent text from wrapping */
       overflow: hidden;
