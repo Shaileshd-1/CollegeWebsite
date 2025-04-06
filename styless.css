@@ -798,7 +798,7 @@ marquee a {
 @media (max-width: 450px) {
     .container {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       padding: 5px;
     }
   
