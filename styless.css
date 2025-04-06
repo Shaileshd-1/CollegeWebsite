@@ -809,9 +809,9 @@ marquee a {
     .logo-section {
         display: flex;
         flex-direction: column; /* Stack logo and text */
-        justify-content: center;
+        /* justify-content: center;
         align-items: center;
-        text-align: center;
+        text-align: center; */
     }
 
     .logo-img {
