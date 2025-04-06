@@ -797,12 +797,11 @@ marquee a {
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
-      display: flex;
       flex-direction: column;
-      gap: 10px;
       padding: 10px;
+      gap: 10px;
     }
-  
+
     .logo-section {
       display: flex;
       flex-direction: row;
@@ -810,36 +809,27 @@ marquee a {
       gap: 10px;
       flex-wrap: nowrap;
     }
-  
+
     .logo-img {
-      width: 50px;
+      width: 60px;
       height: auto;
-      flex-shrink: 0; /* Prevent shrinking */
     }
-  
+
     .logo-text {
-      font-size: 14px;
-      font-weight: bold;
-      line-height: 1.2;
-      white-space: nowrap;        /* Prevent wrapping */
+      font-size: 16px;
+      white-space: nowrap;
       overflow: hidden;
-      text-overflow: ellipsis;    /* Add ... if it's too long */
+      text-overflow: ellipsis;
     }
-  
-    .info-section {
-      font-size: 14px;
-      text-align: center;
-    }
-  
+
     .info-section h1 {
       font-size: 18px;
     }
-  
+
     .info-section h2 {
       font-size: 14px;
     }
   }
-  
   
 
 
