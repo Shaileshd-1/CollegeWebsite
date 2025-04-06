@@ -805,8 +805,8 @@ marquee a {
 
     .logo-section {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+         align-items: flex-start;
+        /* text-align: center;  */
     }
 
     .logo-img {
