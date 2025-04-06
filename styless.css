@@ -805,36 +805,36 @@ marquee a {
   
     .logo-section {
       display: flex;
-      flex-direction: column;
+      flex-direction: row; /* Keep logo and text side by side */
+      align-items: center;
+      gap: 10px;
     }
   
     .logo-img {
-      width: 70px;
+      width: 60px;
       height: auto;
-      margin-bottom: 10px;
     }
   
     .logo-text {
-      font-size: 16px;
+      font-size: 14px;
       font-weight: bold;
       line-height: 1.2;
-      /* text-align: center; */
     }
   
     .info-section {
-      font-size: 8px;
-      /* text-align: center; */
+      font-size: 14px;
+      text-align: center;
     }
   
     .info-section h1 {
-      font-size: 14px;
+      font-size: 18px;
     }
   
     .info-section h2 {
-      font-size: 7px;
+      font-size: 14px;
     }
   }
-
+  
 
 
 
