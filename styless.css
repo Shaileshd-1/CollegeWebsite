@@ -815,8 +815,8 @@ marquee a {
 
     .logo-text,
     .info-section {
-        font-size: 16px; /* Keep text readable */
-        line-height: 0.2;
+        font-size: 10px; /* Keep text readable */
+        line-height: 1.2;
         padding: 0px;
     }
 }
