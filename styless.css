@@ -799,11 +799,11 @@ marquee a {
     .container {
         display: flex;
         flex-direction: column; /* Stack elements vertically on small screens */
-        justify-content: center;
-        align-items: center;
+        /* justify-content: center; */
+        /* align-items: center; */
         gap: 10px;
         padding: 10px;
-        text-align: center;
+        /* text-align: center; */
     }
 
     .logo-section {
