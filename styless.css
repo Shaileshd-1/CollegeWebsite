@@ -817,7 +817,7 @@ marquee a {
         font-size: 6px; /* Reduce text size for small screens */
     }
 }
-@media(max-width: 390px) {
+@media(max-width: 800px) {
     .container {
         flex-direction: row; /* Keep elements in one line */
         justify-content: space-between;
