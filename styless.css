@@ -810,11 +810,14 @@ marquee a {
     }
 
     .logo-img {
-        width: 60px; /* Further adjust for smaller screens */
+        width: 80px; /* Further adjust for smaller screens */
     }
 
     .logo-text {
         font-size: 3px; /* Reduce text size for small screens */
+    }
+    .info-section{
+        font-size: 3px;
     }
 }
 
