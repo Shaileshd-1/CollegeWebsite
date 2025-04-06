@@ -814,7 +814,7 @@ marquee a {
     }
 
     .logo-text {
-        font-size: 6px; /* Reduce text size for small screens */
+        font-size: 3px; /* Reduce text size for small screens */
     }
 }
 
