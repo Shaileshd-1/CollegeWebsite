@@ -809,7 +809,7 @@ marquee a {
     }
   
     .logo-img {
-      width: 50px;
+      width: 70px;
       height: auto;
       margin-bottom: 10px;
     }
@@ -818,12 +818,12 @@ marquee a {
       font-size: 16px;
       font-weight: bold;
       line-height: 1.2;
-      text-align: center;
+      /* text-align: center; */
     }
   
     .info-section {
       font-size: 14px;
-      text-align: center;
+      /* text-align: center; */
     }
   
     .info-section h1 {
