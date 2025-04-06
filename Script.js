@@ -87,22 +87,25 @@ function changeSlide(n) {
 
 // Toggle Mobile Menu
 // Toggle mobile menu
-function toggleMenu() {
-    document.querySelector(".nav-links").classList.toggle("active");
-}
-
-// Enable dropdown toggle on mobile devices
-document.querySelectorAll(".dropdown > a").forEach((dropdownLink) => {
-    dropdownLink.addEventListener("click", function (e) {
-        if (window.innerWidth <= 992) {
-            e.preventDefault(); // Prevent default link behavior
-            const submenu = this.parentElement.querySelector(".dropdown-menu");
-            if (submenu) {
-                submenu.classList.toggle("active");
-            }
-        }
+document.addEventListener("DOMContentLoaded", function () {
+    // Toggle the nav menu on mobile
+    document.querySelector(".menu-toggle").addEventListener("click", function () {
+      document.querySelector(".nav-links").classList.toggle("active");
     });
-});
+
+    // Enable dropdown toggle on mobile devices
+    document.querySelectorAll(".dropdown > a").forEach((dropdownLink) => {
+      dropdownLink.addEventListener("click", function (e) {
+        if (window.innerWidth <= 992) {
+          e.preventDefault(); // Prevent default link behavior
+          const submenu = this.parentElement.querySelector(".dropdown-menu");
+          if (submenu) {
+            submenu.classList.toggle("active");
+          }
+        }
+      });
+    });
+  });
 
 
 // Reload page when clicking logo or home link
