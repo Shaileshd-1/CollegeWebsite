@@ -818,26 +818,6 @@ marquee a {
     }
 }
 
-@media (min-width: 480px)
-{
-.container {
-    flex-direction: row; /* Keep elements in one line */
-    justify-content: space-between;
-    gap: 5px;
-}
 
-.logo-section {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 
-.logo-img {
-    width: 60px; /* Further adjust for smaller screens */
-}
 
-.logo-text {
-    font-size: 6px; /* Reduce text size for small screens */
-}
-}
