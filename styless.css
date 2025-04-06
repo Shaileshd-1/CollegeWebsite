@@ -805,20 +805,20 @@ marquee a {
     .logo-section {
       display: flex;
       flex-direction: row;
-      align-items: center;
+      /* align-items: center; */
       gap: 5px;
       flex-wrap: nowrap;
       justify-content: center; /* optional: center align */
     }
   
     .logo-img {
-      width: 30px;       /* smaller logo */
+      width: 40px;       /* smaller logo */
       height: auto;
       flex-shrink: 0;
     }
   
     .logo-text {
-      font-size: 5px;    /* very small text */
+      font-size: 8px;    /* very small text */
       font-weight: 600;
       white-space: nowrap;
       overflow: hidden;
