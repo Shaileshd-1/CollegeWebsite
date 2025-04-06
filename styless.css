@@ -797,39 +797,43 @@ marquee a {
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {
-        display: flex;
-        flex-direction: column; /* Stack elements vertically on small screens */
-        /* justify-content: center; */
-        /* align-items: center; */
-        gap: 10px;
-        padding: 10px;
-        /* text-align: center; */
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
     }
-
+  
     .logo-section {
-        display: flex;
-        flex-direction: column; /* Stack logo and text */
-        /* justify-content: center;
-        align-items: center;
-        text-align: center; */
+      display: flex;
+      flex-direction: column;
     }
-
+  
     .logo-img {
-        width: 70px; /* Reasonable size for mobile screens */
-        height: auto;
-        margin-bottom: 10px;
+      width: 70px;
+      height: auto;
+      margin-bottom: 10px;
     }
-
+  
     .logo-text {
-        font-size: 16px; /* Readable font size */
-        font-weight: bold;
-        line-height: 1.2;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.2;
+      text-align: center;
     }
-
+  
     .info-section {
-        font-size: 14px; /* Adjusted for small screen */
+      font-size: 14px;
+      text-align: center;
     }
-}
+  
+    .info-section h1 {
+      font-size: 18px;
+    }
+  
+    .info-section h2 {
+      font-size: 14px;
+    }
+  }
 
 
 
