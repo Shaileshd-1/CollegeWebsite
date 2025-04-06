@@ -16,18 +16,6 @@ body {
 
 
 /* Navbar */
-.navbar {
-    background: #71b8ff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    
-}
 
 /* Navigation Links */
 .navbar {
@@ -95,9 +83,10 @@ body {
 .dropdown-menu a:hover {
     background: #f8f8f7;
 }
-
-.dropdown:hover .dropdown-menu {
-    display: block;
+@media (min-width: 993px){
+.dropdown:hover .dropdown-menu 
+{    display: block;
+}
 }
 
 /* Mobile Menu */
