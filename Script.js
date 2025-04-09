@@ -18,24 +18,24 @@
 //     showSlides();
 // }
 
-function toggleMenu() {
-    let menu = document.querySelector(".nav-links");
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
-}
+// function toggleMenu() {
+//     let menu = document.querySelector(".nav-links");
+//     menu.style.display = menu.style.display === "block" ? "none" : "block";
+// }
 // Toggle Mobile Menu
-function toggleMenu() {
-    document.querySelector(".nav-links").classList.toggle("active");
-}
+// function toggleMenu() {
+//     document.querySelector(".nav-links").classList.toggle("active");
+// }
 
 // Enable Dropdowns on Click for Mobile
-document.querySelectorAll(".dropdown > a").forEach((dropdown) => {
-    dropdown.addEventListener("click", function (e) {
-        if (window.innerWidth <= 768) {
-            e.preventDefault();
-            this.parentElement.querySelector(".dropdown-menu").classList.toggle("active");
-        }
-    });
-});
+// document.querySelectorAll(".dropdown > a").forEach((dropdown) => {
+//     dropdown.addEventListener("click", function (e) {
+//         if (window.innerWidth <= 768) {
+//             e.preventDefault();
+//             this.parentElement.querySelector(".dropdown-menu").classList.toggle("active");
+//         }
+//     });
+// });
 // document.getElementById("college-logo").addEventListener("click", function(event) {
 //     event.preventDefault();
 //     location.reload();
@@ -87,26 +87,26 @@ function changeSlide(n) {
 
 // Toggle Mobile Menu
 // Toggle mobile menu
-// document.addEventListener("DOMContentLoaded", function () {
-//     const toggle = document.getElementById("menu-toggle");
-//     const navLinks = document.getElementById("nav-links");
+document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
 
-//     toggle.addEventListener("click", function () {
-//       navLinks.classList.toggle("active");
-//     });
+    toggle.addEventListener("click", function () {
+      navLinks.classList.toggle("active");
+    });
 
-//     document.querySelectorAll(".dropdown > a").forEach((link) => {
-//       link.addEventListener("click", function (e) {
-//         if (window.innerWidth <= 992) {
-//           e.preventDefault();
-//           const submenu = this.parentElement.querySelector(".dropdown-menu");
-//           if (submenu) {
-//             submenu.classList.toggle("active");
-//           }
-//         }
-//       });
-//     });
-//   });
+    document.querySelectorAll(".dropdown > a").forEach((link) => {
+      link.addEventListener("click", function (e) {
+        if (window.innerWidth <= 992) {
+          e.preventDefault();
+          const submenu = this.parentElement.querySelector(".dropdown-menu");
+          if (submenu) {
+            submenu.classList.toggle("active");
+          }
+        }
+      });
+    });
+  });
 // Reload page when clicking logo or home link
 document.getElementById("college-logo").addEventListener("click", function(event) {
     event.preventDefault();
