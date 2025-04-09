@@ -99,15 +99,13 @@ body {
 }
 
 @media (max-width: 768px) {
-    /* Show hamburger icon */
     .menu-toggle {
         display: block;
-        /* font-size: 1.8rem;
+        font-size: 1.8rem;
         color: white;
-        cursor: pointer; */
+        cursor: pointer;
     }
 
-    /* Stack nav links vertically */
     .nav-links {
         display: none;
         flex-direction: column;
@@ -115,27 +113,24 @@ body {
         width: 100%;
         background: #34495e;
         position: absolute;
-        top: 60px; /* Adjust if needed depending on navbar height */
+        top: 60px;
         left: 0;
         text-align: center;
         z-index: 999;
     }
 
-    /* Show nav links when menu is active */
     .nav-links.active {
         display: flex;
     }
 
-    /* Dropdown menu on mobile */
     .dropdown-menu {
         display: none;
-        /* position: relative; */
+        position: relative;
         width: 100%;
         background: #3e556d;
         border-radius: 0;
     }
 
-    /* Show dropdown menu when toggled */
     .dropdown-menu.active {
         display: block;
     }
