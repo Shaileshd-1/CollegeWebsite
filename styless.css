@@ -769,13 +769,26 @@ marquee a {
     }
 }
 /* Table */
-.table{
+.table {
     border-collapse: collapse;
     margin-top: 50px;
     margin-left: 200px;
-    height:250px;
     margin-right: 50px;
+    height: 250px;
+    width: 100%; /* Ensure it adapts */
+    overflow-x: auto;
+    display: block; /* Needed for scroll on small screens */
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .table {
+        margin: 20px auto;
+        height: auto;
+        width: 100%;
+    }
+}
+
 
 
 /* College header */
