@@ -772,7 +772,7 @@ marquee a {
 .table {
     border-collapse: collapse;
     margin-top: 50px;
-    margin-left: 200px;
+    margin-left: 50px;
     margin-right: 50px;
     height: 250px;
     width: 100%; /* Ensure it adapts */
