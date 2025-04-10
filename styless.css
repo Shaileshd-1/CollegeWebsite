@@ -181,7 +181,7 @@ body {
 
 @media (max-width: 768px) {
     .slide img {
-        height: 250px; /* Smaller height for mobile */
+        height: 150px; /* Smaller height for mobile */
     }
 
     .prev, .next {
