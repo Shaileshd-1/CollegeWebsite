@@ -181,7 +181,7 @@ body {
 
 @media (max-width: 768px) {
     .slide img {
-        height: 150px; /* Smaller height for mobile */
+        height: 15  0px; /* Smaller height for mobile */
     }
 
     .prev, .next {
@@ -798,9 +798,15 @@ marquee a {
     border-collapse: collapse;
     width: 50%;
     margin-left: 300px;
+    margin-bottom: 50px;
     
 }
-
+table td, table th {
+    height: 60px; 
+}
+#tablew{
+    width: 80px;
+}
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     .table {
